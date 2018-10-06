@@ -21,3 +21,7 @@ Calculation:
 - Performance analysis and several implementations
 - Memoized primitive recursive implementation
 
+# Docs
+
+Haddock generated documentation may be found [here](https://michaeljklein.github.io/A003278/)
+
