@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><link rel="stylesheet" type="text/css" href="style.css" /><script type="text/javascript" src="highlight.js"></script></head><body><pre><span class="hs-pragma">{-# LINE</span><span> </span><span class="hs-pragma">1</span><span> </span><span class="hs-pragma">&quot;libraries/base/GHC/Event/EPoll.hsc&quot;</span><span> </span><span class="hs-pragma">#-}</span><span>
+</span><a name="line-2"></a><span class="hs-pragma">{-# LANGUAGE Trustworthy #-}</span><span>
+</span><a name="line-3"></a><span class="hs-pragma">{-# LANGUAGE GeneralizedNewtypeDeriving
+           , NoImplicitPrelude
+           , BangPatterns
+  #-}</span><span>
+</span><a name="line-7"></a><span>
+</span><a name="line-8"></a><span class="hs-comment">-----------------------------------------------------------------------------</span><span>
+</span><a name="line-9"></a><span class="hs-comment">-- |</span><span>
+</span><a name="line-10"></a><span class="hs-comment">-- A binding to the epoll I/O event notification facility</span><span>
+</span><a name="line-11"></a><span class="hs-comment">--</span><span>
+</span><a name="line-12"></a><span class="hs-comment">-- epoll is a variant of poll that can be used either as an edge-triggered or</span><span>
+</span><a name="line-13"></a><span class="hs-comment">-- a level-triggered interface and scales well to large numbers of watched file</span><span>
+</span><a name="line-14"></a><span class="hs-comment">-- descriptors.</span><span>
+</span><a name="line-15"></a><span class="hs-comment">--</span><span>
+</span><a name="line-16"></a><span class="hs-comment">-- epoll decouples monitor an fd from the process of registering it.</span><span>
+</span><a name="line-17"></a><span class="hs-comment">--</span><span>
+</span><a name="line-18"></a><span class="hs-comment">-----------------------------------------------------------------------------</span><span>
+</span><a name="line-19"></a><span>
+</span><a name="line-20"></a><span class="hs-keyword">module</span><span> </span><span class="hs-identifier">GHC.Event.EPoll</span><span>
+</span><a name="line-21"></a><span>    </span><span class="hs-special">(</span><span>
+</span><a name="line-22"></a><span>      </span><span class="hs-identifier">new</span><span>
+</span><a name="line-23"></a><span>    </span><span class="hs-special">,</span><span> </span><span class="hs-identifier">available</span><span>
+</span><a name="line-24"></a><span>    </span><span class="hs-special">)</span><span> </span><span class="hs-keyword">where</span><span>
+</span><a name="line-25"></a><span>
+</span><a name="line-26"></a><span class="hs-keyword">import</span><span> </span><span class="hs-keyword">qualified</span><span> </span><span class="hs-identifier">GHC.Event.Internal</span><span> </span><span class="hs-keyword">as</span><span> </span><span class="hs-identifier">E</span><span>
+</span><a name="line-27"></a><span>
+</span><a name="line-28"></a><span>
+</span><a name="line-29"></a><span>
+</span><a name="line-30"></a><span class="hs-pragma">{-# LINE</span><span> </span><span class="hs-pragma">29</span><span> </span><span class="hs-pragma">&quot;libraries/base/GHC/Event/EPoll.hsc&quot;</span><span> </span><span class="hs-pragma">#-}</span><span>
+</span><a name="line-31"></a><span class="hs-keyword">import</span><span> </span><span class="hs-identifier">GHC.Base</span><span>
+</span><a name="line-32"></a><span>
+</span><a name="line-33"></a><span class="hs-identifier">new</span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-identifier">IO</span><span> </span><span class="hs-identifier">E.Backend</span><span>
+</span><a name="line-34"></a><span class="hs-identifier">new</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-identifier">errorWithoutStackTrace</span><span> </span><span class="hs-string">&quot;EPoll back end not implemented for this platform&quot;</span><span>
+</span><a name="line-35"></a><span>
+</span><a name="line-36"></a><span class="hs-identifier">available</span><span> </span><span class="hs-glyph">::</span><span> </span><span class="hs-identifier">Bool</span><span>
+</span><a name="line-37"></a><span class="hs-identifier">available</span><span> </span><span class="hs-glyph">=</span><span> </span><span class="hs-identifier">False</span><span>
+</span><a name="line-38"></a><span class="hs-pragma">{-# INLINE</span><span> </span><span class="hs-pragma">available</span><span> </span><span class="hs-pragma">#-}</span><span>
+</span><a name="line-39"></a><span>
+</span><a name="line-40"></a><span class="hs-pragma">{-# LINE</span><span> </span><span class="hs-pragma">242</span><span> </span><span class="hs-pragma">&quot;libraries/base/GHC/Event/EPoll.hsc&quot;</span><span> </span><span class="hs-pragma">#-}</span><span>
+</span><a name="line-41"></a><span>
+</span><a name="line-42"></a></pre></body></html>
