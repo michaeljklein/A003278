@@ -1,0 +1,76 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: 21f1eb4682ee9e029b24c963b9a94b9af414f7be8791678bc5fa9d4c15d077a4
+
+name:           A003278
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/michaeljklein/A003278#readme>
+homepage:       https://github.com/michaeljklein/A003278#readme
+bug-reports:    https://github.com/michaeljklein/A003278/issues
+author:         Michael J. Klein
+maintainer:     lambdamichael@gmail.com
+copyright:      2018 Michael J. Klein
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/michaeljklein/A003278
+
+library
+  exposed-modules:
+      Lib
+  other-modules:
+      Paths_A003278
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , containers
+    , foldl
+    , profunctors
+    , time
+    , transformers
+  default-language: Haskell2010
+
+executable A003278-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_A003278
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      A003278
+    , base >=4.7 && <5
+    , containers
+    , foldl
+    , profunctors
+    , time
+    , transformers
+  default-language: Haskell2010
+
+test-suite A003278-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Paths_A003278
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      A003278
+    , base >=4.7 && <5
+    , containers
+    , foldl
+    , profunctors
+    , time
+    , transformers
+  default-language: Haskell2010
